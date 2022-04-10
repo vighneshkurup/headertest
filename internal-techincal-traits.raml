@@ -1,0 +1,17 @@
+headers:
+  X-HSBC-Locale:
+    description: This represents the language of the client and is effectively an internally used
+  Accept-Language Header as governed by FC 2616
+    example: "en-GB"
+    pattern: ^[a-zA-Z0-9, ;.= - ]+$
+    required: true
+  X-HSBC-Chn1-CountryCode:
+    description: Country Code
+    example: "AM"
+    pattern: ^[A-Z]{2}$
+    required: true
+  X-HSBC-Chn1-Group-Member:
+    description: Group Member
+    example: "MABK"
+    pattern: ^[A-Z]{4}$
+    required: true
